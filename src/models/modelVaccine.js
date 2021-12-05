@@ -1,32 +1,29 @@
 const { Sequelize, DataTypes } = require("sequelize");
 const { database } = require("../db");
 
-const Doctor = database.define("Doctor", {
+const vaccine = database.define("vaccine", {
   id: {
     type: DataTypes.BIGINT,
     autoIncrement: true,
     allowNull: false,
     primaryKey: true,
   },
+
   name: {
     type: DataTypes.STRING,
+    allowNull: false,
   },
-  crm: {
+
+  expected_date: {
     type: DataTypes.STRING,
+    allowNull: false,
   },
-  specialty: {
-    type: DataTypes.STRING,
-  },
-  clinic: {
-    type: DataTypes.STRING,
-  },
-  phone: {
-    type: DataTypes.STRING,
-  },
-  favorite: {
+
+  vaccinated: {
     type: DataTypes.BOOLEAN,
-  },
+    allowNull: false,
+  }
 });
 
-Doctor.sync();
-module.exports = Doctor;
+vaccine.sync();
+module.exports = vaccine;
