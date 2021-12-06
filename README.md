@@ -1,10 +1,10 @@
 # De olho na sua vacinação!
 
-Chegou a hora de praticarmos um pouco mais o que vimos durante essa semana. Agora, você vai criar uma API para controlar suas próprias vacinas com o objetivo de ficar com a sua vacinação sempre em dia.
+Uma API para controlar suas próprias vacinas com o objetivo de ficar com a sua vacinação sempre em dia.
 
 ---
 
-Cada vacina deverá ter as seguintes informações:
+Cada vacina tem as seguintes informações:
 
 | Chave            | Descrição                            | Tipo     | Exemplo           |
 | ---------------- | ------------------------------------ | -------- | ----------------- |
@@ -15,7 +15,7 @@ Cada vacina deverá ter as seguintes informações:
 
 ---
 
-Sua API deve ser capaz de cadastrar uma nova vacina, visualizar as vacinas cadastradas e marcar se a vacinação foi realizada. Para isso, você entregará os seguintes contratos:
+As rotas disponíveis na API são as seguintes:
 
 | Verbo        | Recurso                    | Descrição                              |
 | ------------ | -------------------------- | -------------------------------------- |
