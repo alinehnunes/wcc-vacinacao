@@ -21,7 +21,8 @@ const vaccine = database.define("vaccine", {
 
   vaccinated: {
     type: DataTypes.BOOLEAN,
-    allowNull: false,
+    allowNull: true,
+    defaultValue: false,
   }
 });
 

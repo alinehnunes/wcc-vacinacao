@@ -1,10 +1,10 @@
 const express = require("express")
 const router = express.Router()
-const controller = require("../controllers/doctorController")
+const controller = require("../controllers/controllerVaccine")
 
 router.get("/vaccines", controller.getVaccines);
 router.get("/vaccines/:id", controller.getVaccinesById);
 router.post("/vaccines", controller.createVaccines);
-router.patch("/vaccines/:d/vaccinated", controller.setVaccines);
+router.patch("/vaccines/:id/vaccinated", controller.setVaccineted);
 
 module.exports = router

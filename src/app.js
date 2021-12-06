@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-const vaccine = require("./routes/vaccine")
+const vaccine = require("./routes/routerVaccine")
 const index = require("./routes/index")
 
 app.use(express.json());
